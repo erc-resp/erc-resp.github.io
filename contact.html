@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <!-- font awesome -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
    <script src="jquery.min.js"></script>
    <script src="owlcarousel/owl.carousel.min.js"></script>
@@ -22,8 +22,20 @@
   <body>
     <script src="js/bootstrap.bundle.min.js"></script>
    
-    <!-- header image-->
-    <img src="images/resp.jpg" class="headerimage"alt="header"> 
+     <!------------------------------------------ header image ------------------------------------------->
+     <container class="headercontainer">
+      <img src="images/resp.jpg" class="headerimage"alt="header"> 
+     <!-------------------------------------------- end header image -------------------------------------->
+     <!------------------------------------- login button ---------------------------------->
+      <a  class="btn btn-primary" role="button" id="headerbutton" href="signin.html" 
+      >Login</a>
+     <!---------------------------------------- end login ------------------------------------->
+     <!------------------------------------- language buttons ----------------------------------------------->
+      <button class="btn btn-primary-outline" id="eng"><i class="flag-icon flag-icon-us"></i></button>
+      <button class="btn btn-primary-outline" id="it"><i class="flag-icon flag-icon-it"> </i></button>
+      <!------------------------------------ end language button -------------------------------------------->
+    </container>
+   
    
   <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
     <div class="container-fluid">

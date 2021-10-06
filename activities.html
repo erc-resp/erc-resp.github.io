@@ -9,7 +9,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link href="css/activitites.css" rel="stylesheet" />
-    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
         <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
         <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
         <!-- font awesome -->
@@ -20,16 +21,25 @@
        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
        <!---------------------------------------------- page title -------------------------------------->
        <title>Activities</title>
 
   </head>
   <body>
     
-  <!------------------------------ header image ----------------------------------------------->
-    <img src="images/resp.jpg" class="headerimage"alt="header"> 
-   
+ <!------------------------------------------ header image ------------------------------------------->
+ <container class="headercontainer">
+  <img src="images/resp.jpg" class="headerimage"alt="header"> 
+ <!-------------------------------------------- end header image -------------------------------------->
+ <!------------------------------------- login button ---------------------------------->
+  <a  class="btn btn-primary" role="button" id="headerbutton" href="signin.html" 
+  >Login</a>
+ <!---------------------------------------- end login ------------------------------------->
+ <!------------------------------------- language buttons ----------------------------------------------->
+  <button class="btn btn-primary-outline" id="eng"><i class="flag-icon flag-icon-us"></i></button>
+  <button class="btn btn-primary-outline" id="it"><i class="flag-icon flag-icon-it"> </i></button>
+  <!------------------------------------ end language button -------------------------------------------->
+</container>
 
   <!----------------------------------- Main menu -------------------------------------------->  
   <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
@@ -110,7 +120,7 @@
    <!---------------------------------------- End of activity ------------------------------------------> 
   
   
-   
+
 <!-------------------------------- page footer ------------------------------------------->
 
 <footer class="page-footer font-small black pt-4" id="ourfooter">
