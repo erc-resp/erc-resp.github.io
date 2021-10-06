@@ -11264,12 +11264,11 @@ border: none;
 
 }
 #it{
-  position: absolute;
-  top:0;
-  left: 23px;
-  display:inline;
-
+  margin-right: 70px;
+  
 }
+
+
 .carousel-inner > .item > img {
   width:640px;
   height:360px;
@@ -11384,6 +11383,13 @@ background-color: transparent;
   object-fit: cover;
 
 }
+#loginheader{
+  background-color: black;
+  color: white;
+}
 
-
+#erc_login{
+  text-align: center;
+  color:white;
+}
 
