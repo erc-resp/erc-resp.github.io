@@ -2953,7 +2953,8 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  background-color: rgb(173, 173, 17) !important;
+  color:black !important;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3776,6 +3777,7 @@ textarea.form-control-lg {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
+  margin-right: 50px;
 }
 .btn-group > .btn,
 .btn-group-vertical > .btn {
