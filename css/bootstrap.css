@@ -3779,9 +3779,7 @@ textarea.form-control-lg {
   vertical-align: middle;
   margin-right: 50px;
 }
-.btn-group:hover{
-  background-color: rgb(173, 173, 17);
-}
+
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
@@ -11397,4 +11395,6 @@ background-color: transparent;
   text-align: center;
   color:white;
 }
+
+
 
