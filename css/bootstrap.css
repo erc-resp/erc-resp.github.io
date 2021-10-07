@@ -3779,6 +3779,9 @@ textarea.form-control-lg {
   vertical-align: middle;
   margin-right: 50px;
 }
+.btn-group:hover{
+  background-color: yellow important;
+}
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
