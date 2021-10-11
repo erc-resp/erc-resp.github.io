@@ -11261,14 +11261,11 @@ border: none;
 
 }
 #eng{
-  position: absolute;
-  top:0;
-  left: 0;
-  display:inline;
+padding-right: 0px;
 
 }
 #it{
-  margin-right: 70px;
+  padding-left: 0px;
   
 }
 
