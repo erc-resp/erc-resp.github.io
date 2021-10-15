@@ -11331,7 +11331,7 @@ right: 0px
 }
 .owl-prev  , .owl-next {
   position: absolute;
-  top:80px
+  top:35%;
 }
 .owl-prev span , .owl-next span{
   font-size: 40px;
