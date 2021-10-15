@@ -82,6 +82,8 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 hr {
@@ -11315,7 +11317,7 @@ h1 {
   text-shadow: 0px 2px 0px #000000;
 }
 .image-card{
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   object-fit: cover;
   background-color: black;
