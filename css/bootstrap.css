@@ -11396,13 +11396,14 @@ background-color: transparent;
   color:white;
 }
 #headerimg{
-  background-color: #000;
   border: 0;
   margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 #headertext{
   color: white !important;
+  justify-content: justify;
 }
 
 .center {
@@ -11415,6 +11416,5 @@ background-color: transparent;
 #headercontainer{
   background-color: black;
   color: white !important;
-  margin-bottom: -30px !important;
 
 }
