@@ -11381,8 +11381,8 @@ background-color: transparent;
   
 }
 #footerimg{
-  height: auto;
-  width:100%;
+  height: 15vh;
+  width:auto;
   object-fit: cover;
   
 

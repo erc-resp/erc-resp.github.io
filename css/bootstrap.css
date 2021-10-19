@@ -11383,7 +11383,6 @@ background-color: transparent;
 #footerimg{
   height: 15vh;
   width:auto;
-  object-fit: cover;
 
 }
 #loginheader{
