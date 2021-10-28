@@ -11415,5 +11415,22 @@ background-color: transparent;
 #headercontainer{
   background-color: black;
   color: white !important;
+  
+
+}
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+.page-footer {
+  position: relative;
+  bottom: 0;
+}
+div {
+  display: block;
+  width:100%;
+  height:100%;
+  overflow: auto;
 
 }
