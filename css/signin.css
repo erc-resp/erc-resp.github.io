@@ -44,6 +44,8 @@ h2 {
   background: #fff;
   padding: 30px;
   width: 90%;
+  min-height: 100%;
+
   max-width: 450px;
   position: relative;
   padding: 0px;
