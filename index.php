@@ -11,6 +11,9 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 $data = $row['div1'];
 $contedit="true";
 ?>
+
+
+<!-- italian version-->
 <!DOCTYPE html>
 <html lang="italian">
 
@@ -31,13 +34,27 @@ $contedit="true";
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <!-- jquery-->
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="ckeditor/ckeditor.js"> </script>
   <!----- Title of the webpage-->
   <title>The Roman Emperor Seen from the Provinces(RESP)</title>
   <!--   end title -->
-</head>
-<!-- -------------------------- main content ------------------------------------- -->
+  
 
-<body>
+  <script> 
+  function saveText() {
+     var xr = new XMLHttpRequest();
+     var url = "saveNewText.php";
+     var text = document.getElementById("editable"). innerHTML;
+     var vars = "newText="+text;
+     xr.open ("POST", url, true)
+     xr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+    xr.send(vars);
+}
+
+</script>
+<!---------------------------- main content --------------------------------------->
+
+<body >
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -46,7 +63,7 @@ $contedit="true";
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
   <script src="ckeditor/ckeditor.js"></script>
 
-
+  <!--------------------------- header ------------------------------------------->
   <div class="row" id="headercontainer">
     <div class="col-sm-3 mx-auto">
       <center>
@@ -59,15 +76,14 @@ $contedit="true";
     </div>
   </div>
 
-  <!-- ---------------------------------------- header --------------------------------------- -->
-  <!-- ------------------------------------- Menu --------------------------------------------------------------- -->
+  <!------------------------------------------ header ----------------------------------------->
+  <!--------------------------------------- Menu ----------------------------------------------------------------->
   <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
     <div class="container-fluid">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <a target="_parent" class="nav-link" href="index.html"><i class="flag-icon flag-icon-gb"></i></a>
-        <a target="_parent" class="nav-link" href="italian/index.html" exact><i class="flag-icon flag-icon-it"></i></a>
-        <a target="_parent" class="nav-link" href="signin.html"   min-height: 100%;
-><i class="fas fa-sign-in-alt"></i>MY
+        <a target="_parent" class="nav-link" href="index.php"><i class="flag-icon flag-icon-gb"></i></a>
+        <a target="_parent" class="nav-link" href="italian/index.php" exact><i class="flag-icon flag-icon-it"></i></a>
+        <a target="_parent" class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i>MY
           RESP</a>
       </div>
       <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -76,14 +92,14 @@ $contedit="true";
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.html" title="Home"><i
+          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="index.php" title="Home"><i
                 class="fas fa-landmark"></i> <span></span></a> </li>
-          <li class="nav-item"> <a target="_parent" class="nav-link" href="project.html" exact>The Project</a> </li>
-          <li class="nav-item"> <a class="nav-link " href="aboutus.html">The Team</a> </li>
-          <li class="nav-item"> <a class="nav-link " href="partners.html">Partners</a></li>
-          <li class="nav-item"> <a class="nav-link " href="activities.html">Activities</a></li>
-          <li class="nav-item"> <a class="nav-link " href="resources.html">Resources</a></li>
-          <li class="nav-item"> <a class="nav-link " href="contact.html">Contacts</a></li>
+          <li class="nav-item"> <a target="_parent" class="nav-link" href="project.php" exact>The Project</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="aboutus.php">The Team</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="partners.php">Partners</a></li>
+          <li class="nav-item"> <a class="nav-link " href="activities.php">Activities</a></li>
+          <li class="nav-item"> <a class="nav-link " href="resources.php">Resources</a></li>
+          <li class="nav-item"> <a class="nav-link " href="contact.php">Contacts</a></li>
         </ul>
         </ul>
         <form class="d-flex"> <input class="form-control me-2" placeholder="Search" aria-label="Search" type="search">
@@ -91,8 +107,8 @@ $contedit="true";
       </div>
     </div>
   </nav>
-  <!-- ---------------------------------------------------- end of menu ------------------------------------------ -->
-  <!-- --------------------------------------------- Image gallery-------------------------------------------------- -->
+  <!------------------------------------------------------ end of menu -------------------------------------------->
+  <!----------------------------------------------- Image gallery---------------------------------------------------->
   <div class="owl-carousel owl-theme">
     <div class="item"><img src="images/SS1.jpg" class=" responsive"></div>
     <div class="item"><img src="images/SS2.jpg" class=" responsive"></div>
@@ -107,44 +123,41 @@ $contedit="true";
     <div class="item"><img src="images/SS11.jpg" class=" responsive"></div>
     <div class="item"><img src="images/SS12.jpg" class=" responsive"></div>  
   </div>
-
-  <!------------------------------------------ main page content ------------------------------------------- -->
+  <!--------------------------------------------------- end of image gallery ------------------------------------------>
+  <!------------------------------------------ main page content --------------------------------------------->
   <div class="container">
-    <div class="page-header"> </div>
+    
     <div class="row grid-divider">
       <div class="col-sm-6">
-        <div class="col-padding" id="col1">
+        <div class="col-padding" contenteditable=<?php echo $contedit; ?> id="col1">
           <h2>Project activities</h2>
           <a class="btn btn-light" role="button" href="#" id="btndown"> Show</a>
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="col-padding" id="col1">
+        <div class="col-padding" contenteditable=<?php echo $contedit; ?> id="col1">
           <h3> News</h3>
           Page under construction. 
    
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="col-padding" id="col1">
+        <div class="col-padding" contenteditable=<?php echo $contedit; ?> id="col1">
           <h3>Useful Links</h3>
           <p>test 123</p>
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="col-padding" id="col1">
-          <h3>Archives</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-            veniam aperiam numquam cupiditate maiores repudiandae ea dicta,
-            sunt rerum corporis. Ab veniam aperiam numquam cupiditate maiores
-            repudiandae ea dicta, sunt rerum corporis. Ab veniam aperiam
-            numquam cupiditate maiores repudiandae ea dicta.</p>
+        <div class="col-padding" contenteditable=<?php echo $contedit; ?> id="editable" onblur = "saveText() " name="content">
+        <?php echo $data; ?>
+         
         </div>
       </div>
     </div>
   </div>
-  <!-- ---------------------------------------------- end of main page content ------------------------------------- -->
-  <!-- ------------- page footer ----------------------------------------- -->
+
+  
+  
   <footer class="page-footer font-small black pt-4" >
     <div class="container-fluid text-center text-md-left wrapper" id="ourfooter">
       <div class="row"  >

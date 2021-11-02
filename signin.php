@@ -1,5 +1,4 @@
 <?php 
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,7 +17,10 @@
     <!-- owl carousel-->
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/owl.theme.default.min.css" rel="stylesheet" />
-
+    <!-- 
+    <style type="text/css">
+      body { background: rgb(255, 255, 255) !important; } 
+   </style> -->
 
     <!-- font awesome -->
    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
@@ -26,6 +28,8 @@
    <script src="owlcarousel/owl.carousel.min.js"></script>
    <!-- jquery-->
    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
     <title>Signin</title>
 
 
@@ -44,7 +48,6 @@
     
         <div class="row" id="footergrid">
          <center>
-          <img src="../images/RESP.png" alt="eu-logo"  class="responsive" id="footerimg">
             
               <h1 id="erc_login"> ERC-RESP Authentication system</h1> 
             </center>
@@ -60,18 +63,21 @@
       
           <!-- Login Form -->
           <form formtarget="_blank">
-            <a  class="btn btn-primary" role="button" id="signinbutton" href="index.html" ><i class="fas fa-angle-left"></i>  
+            <a  class="btn btn-primary" role="button" id="signinbutton" href="index.php" ><i class="fas fa-angle-left"></i>  
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home</a>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nome utente">
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="username">
             <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
             <input type="submit" class="fadeIn fourth" value="Log In">
           </form>
-    
+      
+          <!-- Remind Passowrd
+          <div id="formFooter">
+            <a class="underlineHover" href="#">Go to the Site</a>
+          </div>  -->
       
         </div>
       </div>
 
-      <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 
 
   </body>

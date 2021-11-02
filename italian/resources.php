@@ -1,7 +1,6 @@
 <?php 
 
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -41,7 +40,7 @@
 <body>
 
 
-  <!-- ------------------------- header ----------------------------------------- -->
+  <!--------------------------- header ------------------------------------------->
   <div class="row" id="headercontainer">
     <div class="col-sm-3 mx-auto">
       <center>
@@ -53,7 +52,7 @@
     </div>
   </div>
 
-  <!-- ---------------------------------------- header --------------------------------------- -->
+  <!------------------------------------------ header ----------------------------------------->
 
 
 
@@ -61,9 +60,9 @@
   <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
     <div class="container-fluid">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <a target="_parent" class="nav-link" href="../resources.html"><i class="flag-icon flag-icon-gb"></i></a>
+        <a target="_parent" class="nav-link" href="../resources.php"><i class="flag-icon flag-icon-gb"></i></a>
         <a target="_parent" class="nav-link" href="#"><i class="flag-icon flag-icon-it"></i></a>
-        <a target="_parent" class="nav-link" href="signin.html"><i class="fas fa-sign-in-alt"></i>MY
+        <a target="_parent" class="nav-link" href="signin.php"><i class="fas fa-sign-in-alt"></i>MY
           RESP</a>
       </div>
 
@@ -75,14 +74,14 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" title="Home">
+            <a class="nav-link active" aria-current="page" href="index.php" title="Home">
               <i class="fas fa-landmark"></i> <span></span></a> </li>
-          <li class="nav-item"> <a target="_parent" class="nav-link" href="project.html" exact>Il Progetto</a> </li>
-          <li class="nav-item"> <a class="nav-link " href="aboutus.html">Il Gruppo di Ricerca</a> </li>
-          <li class="nav-item"> <a class="nav-link " href="#">Partners</a> </li>
-          <li class="nav-item"> <a class="nav-link " href="activities.html">Attività</a></li>
-          <li class="nav-item"> <a class="nav-link " href="resources.html">Risorse</a> </li>
-          <li class="nav-item"> <a class="nav-link " href="contact.html">Contatti</a></li>
+          <li class="nav-item"> <a target="_parent" class="nav-link" href="project.php" exact>Il Progetto</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="aboutus.php">Il Gruppo di Ricerca</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="partners.php">Partners</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="activities.php">Attività</a></li>
+          <li class="nav-item"> <a class="nav-link " href="resources.php">Risorse</a> </li>
+          <li class="nav-item"> <a class="nav-link " href="contact.php">Contatti</a></li>
         </ul>
         <form class="d-flex"> <input class="form-control me-2" placeholder="Cerca" aria-label="Search" type="search">
           <button class="btn btn-secondary" type="submit"> <i class="fas fa-search"></i> </button> </form>
@@ -91,10 +90,10 @@
 
     </div>
   </nav>
-  <!-- ---------------------------------------------------- end of menu ------------------------------------------ -->
-  <h1>Partners</h1>
+  <!------------------------------------------------------ end of menu -------------------------------------------->
+  <h1>Risorse</h1>
 
-     <!-- ------------- page footer ----------------------------------------- -->
+     <!--------------- page footer ------------------------------------------->
      <footer class="page-footer font-small black pt-4" >
       <div class="container-fluid text-center text-md-left wrapper" id="ourfooter">
         <div class="row "  >
@@ -116,7 +115,7 @@
         </div>
       </div>
     </footer>
-    <!-- ------------------------------------------ end of  Footer ----------------------------------------------- -->
+    <!-------------------------------------------- end of  Footer ------------------------------------------------->
 </body>
 
 </html>
